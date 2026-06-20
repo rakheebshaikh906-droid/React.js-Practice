@@ -1,15 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function User() {
+  const { userid } = useParams()
   return (
-    <h1 className='bg-green-500 text-blue p-4 padding -10 text-xl'>hello</h1>
+    <div className='bg-gray-600 text-white text-3xl p-4'>User: {userid}</div>
   )
 }
 
-export default App;
+export default User
