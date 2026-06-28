@@ -5,7 +5,7 @@ const initialState = {
 }
 
 
-
+//todo slice function
 export const todoSlice = createSlice({
     name: 'todo',
     initialState,
